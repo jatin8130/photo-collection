@@ -1,0 +1,138 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.header{
+    position: fixed;
+    margin-right: 68%;
+    padding-bottom: 100vh;
+    background-color: rgb(232, 228, 219);
+    text-align: center;
+    position: fixed;
+    border-right: 1px solid white;
+}
+.line{
+    width: 150px;
+    height: 3px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #130e0e;
+}
+.sitename{
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-top: 30px;
+    display: block;
+    color: rgba(0, 0, 0, 0.945);
+    font-size: 36px;
+    line-height: 100%;
+    text-decoration: none;
+}
+.navigation{
+    display: flex;
+    flex-direction: column;
+}
+.nav{
+    margin-right: 100px;
+    padding: 5px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.1s;
+    font-weight: bold;
+    opacity: 60%;
+}
+.nav:hover{
+    opacity: 180%;
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.discription{
+    font-weight: 900;
+    font-size: 15px;
+}
+.img{
+    height: 35px;
+    padding-right: 25px;
+    opacity: 70%;
+}
+.img:hover{
+    opacity: 180%;
+}
+#built{
+    padding-top: 10px;
+    float: left;
+    padding-left: 1cm;
+}
+.content{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 90vh;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    float: right;
+}
+.item{
+    background-color: rgb(232, 228, 219);
+    height: 90vh;
+    width: 145vh;
+    margin-right: 40px;
+    margin-top: 40px; 
+    float: right;
+    margin-bottom: 40px;
+    scroll-snap-align: start;
+}
+.photo{
+    display: grid;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 60vh;
+    max-width: auto;
+    box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 25px purple;
+}
+.user-detail{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-left: 15px
+}
+#user{
+    background-color: black;
+    height: 35px;
+    width: 35px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+.user_name{
+    margin-left: 15px;
+    padding-top: 8px;
+    position: relative;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+}
+.user_name:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom:  -2px;
+    height: 2px;
+    width: 100%;
+    background-color: rgb(8, 15, 8);
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(0);
+}
+.user_name:hover::after{
+    transform: scaleX(1);  
+}
+.writter{
+    padding: 15px;
+    font-size: 0.5cm;
+    font-weight: 400;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 25px purple;
+}
